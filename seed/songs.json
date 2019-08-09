@@ -1,0 +1,23 @@
+[ {
+    "titulo": "Send My Love",    
+    "artista": "Adele",
+    "genero": "PopR&B",
+    "album": "25",
+    "albumImagenUrl": "https://static1.squarespace.com/static/58ab2fce20099e7487a18b2a/t/58b5dec88c60358b07cfeb45/1488319201809/Adele_-_25_Official_Album_Cover.png",
+    "youtubeId": "fk4BbF7B29w",
+    "letra": "",
+    "tab": "",
+    "UserId":1
+    
+},
+{
+    "titulo": "You Raise Me Up",    
+    "artista": "Josh Groban",
+    "genero": "Adult Contemporary",
+    "album": "Closer",
+    "albumImagenUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Closercover.jpg/220px-Closercover.jpg",
+    "youtubeId": "fk4BbF7B29w",
+    "letra": "aJxrX42WcjQ",
+    "tab": "",
+    "UserId":1
+}]
