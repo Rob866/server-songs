@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  port: process.env.PORT || 'https://server-songs.herokuapp.com',
+  port: process.env.PORT || 80,
   db: {
     database: process.env.DB_NAME || 'tracker',
     user: process.env.DB_USER || 'tracker',
