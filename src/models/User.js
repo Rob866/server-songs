@@ -28,6 +28,8 @@ module.exports = (sequelize, DataTypes) => {
   })
   User.associate = function (models) {
     User.hasMany(models.Song, { onDelete: 'CASCADE', hooks: true })
+    User.hasMany(models.Bookmark, { onDelete: 'CASCADE', hooks: true })
+    User.hasMany(models.History, { onDelete: 'cascade', hooks: true })
   }
 
   User.prototype.comparePassword = function (password) {
