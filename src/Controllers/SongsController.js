@@ -13,7 +13,7 @@ module.exports = {
               'titulo', 'artista', 'genero', 'album'
             ].map(key => ({
               [key]: {
-                [Op.like]: `%${search}`
+                [Op.like]: `%${search}%`
               }
             }))
           }
