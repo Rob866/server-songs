@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 const { sequelize } = require('./models')
-const config = require('./config/config')
+// const config = require('./config/config')
 require('dotenv').config()
 
 const app = express()
@@ -16,6 +16,7 @@ require('./routes')(app)
 
 sequelize.sync({ force: false })
   .then(() => {
+    // app.listen(config.port)
     app.listen(process.env.PORT, '0.0.0.0')
-    console.log(`incio del servidor  en el puerto ${config.port}`)
+    // console.log(`incio del servidor  en el puerto ${config.port}`)
   })

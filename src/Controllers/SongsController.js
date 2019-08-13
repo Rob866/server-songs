@@ -13,7 +13,7 @@ module.exports = {
               'titulo', 'artista', 'genero', 'album'
             ].map(key => ({
               [key]: {
-                [Op.like]: `%${search}%`
+                [Op.like]: `%${search}`
               }
             }))
           }
@@ -56,8 +56,9 @@ module.exports = {
   },
   async post (req, res) {
     try {
+      req.body.UserId = req.user.id
       const song = await Song.create(req.body)
-      await song.setUser(req.user.id)
+      // await song.setUser(req.user.id)
       res.send(song)
     } catch (err) {
       res.status(500).send({

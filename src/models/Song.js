@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
 
   })
   Song.associate = function (models) {
-    Song.belongsTo(models.User)
+    Song.belongsTo(models.User, { foreignKey: 'UserId' })
     Song.hasMany(models.Bookmark, { onDelete: 'CASCADE', hooks: true })
     Song.hasMany(models.History, { onDelete: 'CASCADE', hooks: true })
   }

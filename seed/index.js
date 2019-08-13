@@ -21,8 +21,8 @@ sequelize.sync({ force: true })
     )
     await Promise.all(
       songs.map(async function (song) {
-        let testUser = await Song.create(song)
-        testUser.setUser(1)
+        const getSong = await Song.create(song)
+        getSong.setUser(1)
       })
     )
     await Promise.all(
@@ -31,6 +31,6 @@ sequelize.sync({ force: true })
       }))
     await Promise.all(
       histories.map(history => {
-        History.create(history)  
+        History.create(history)
       }))
   })
